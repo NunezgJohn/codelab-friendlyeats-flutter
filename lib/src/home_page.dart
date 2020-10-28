@@ -119,7 +119,6 @@ class _HomePageState extends State<HomePage> {
                   ? RestaurantGrid(
                       restaurants: _restaurants,
                       onRestaurantPressed: (id) {
-                        // TODO: Add deep links on web
                         Navigator.pushNamed(context, RestaurantPage.route,
                             arguments: RestaurantPageArguments(id: id));
                       })
